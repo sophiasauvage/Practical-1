@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PDM1 - Week 1 Practical 1 - Exercise 1.1</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../lib/main-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="../lib/p5.js"></script>
+  </head>
+
+  <body>
+    <h1>Exercise 1.1</h1>
+    <p>Your sketch:</p>
+    <div class="guidance">
+        <h2>Instructions</h2>
+        <div>
+            <p>A great way to get comfortable coding is to tinker with some existing code to learn what it does.</p>
+            <p>You'll create this image:</p>
+            <img src="./assets/exercise1-1.png" alt="Expected output for exercise 1.1" width="500" height="300">
+            <br>
+            <p>You're not expected to write code from scratch yet (we haven't told you how!). We have prepared some code for you to tinker with:</p>
+            <ul>
+                <li>Go to the example code repo in your browser (you should know 
+                how to find that from the earlier exercise)</li>
+                <li>Go into the Lectures folder, then W1L1, then starterCode.</li>
+                <li>Open the file called sketch.js and copy all of the code in there.</li>
+                <li>Paste the code into the sketch.js file in this exercise folder.</li>
+            </ul>
+            <p>You'll notice that the code doesn't create the image above. There's only one circle.</p>
+            <p>Find the line of code that creates the circle. It looks like this: <code>circle(250, 150, 100);</code></p>
+            <p>Copy  the <em>entire</em> line of code (including the semicolon) and paste it onto the line below. Now there are two circles, but you'll only see one because they are on top of each other.</p>
+            <p>Each line of code that draws a circle has three numbers. The first two numbers set the circle's position and the last number sets its size. Choose one of the circles and change its first number to 150. You should see two circles right next to each other.</p>
+            <p>Make another circle as you did before: copy and paste one of the existing circles. Set its first number to 350 and its second number to 200.</p>
+            <p>Now you should see three circles in the same positions as the expected image above. Run the <a href="./check-exercise1-1.html" target="_blank">check-exercise1-1.html</a> file to check your work. You should see that all 
+            tests have passed. If not, compare your code to the code in the hint below or ask for help.</p>
+            <h3>Tinker!</h3>
+            <p>Now try changing the numbers to create different arrangements of circles. Below are some things to try. Feel free to try other things. The goal is not to get the right answers but to 
+                develop a sense of what the code does and how to change it. You can always reset your code by copying the original code from the starterCode folder or the hint.</p>
+            <ul>
+                <li>Change the third number of at least one of the circles.</li>
+                <li>Try arranging the circles in a diagonal line.</li>
+                <li>Put one of the circles in the top left corner.</li>
+                <li>What happens if you use a negative number for any of the values?</li>
+                <li>Replace one of the instances of the word "circle" with "square".</li>
+            </ul>
+            <p>Tinkering will cause the automated tests to fail. That's fine!</p>
+        </div>
+        <div>
+            <button class="btn btn-primary hint" type="button" data-bs-toggle="collapse" data-bs-target="#hint" aria-expanded="false" aria-controls="hint">
+                Hint
+            </button>
+            <div class="collapse" id="hint">
+                <div class="card card-body">
+                    <p>You only need to edit sketch.js.</p>
+                    <p>We won't normally give you the answer during practical, but as it's your first exercise, here's the completed code to create the expected image.
+                    </p>
+                    <pre>
+function setup() {
+    createCanvas(500, 300);
+}
+
+function draw() {
+    circle(250, 150, 100);
+    circle(150, 150, 100);
+    circle(350, 200, 100);
+}
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
